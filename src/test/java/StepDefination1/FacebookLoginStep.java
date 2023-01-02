@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class FacebookLoginStep {
@@ -24,5 +25,14 @@ public class FacebookLoginStep {
 	   driver.findElement(By.id("pass")).sendKeys("patil123");
 	   
 	}
+	
+	@Then("user will be on home page")
+	public void user_will_be_on_home_page() throws InterruptedException {
+		Thread.sleep(4000);
+	    System.out.println("CurrentURl="+driver.getCurrentUrl());
+	}
+
+
+
 
 }
