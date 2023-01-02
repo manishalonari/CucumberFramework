@@ -28,8 +28,8 @@ public class FacebookLoginStep {
 	
 	@Then("user will be on home page")
 	public void user_will_be_on_home_page() throws InterruptedException {
-		Thread.sleep(4000);
-	    System.out.println("CurrentURl="+driver.getCurrentUrl());
+		Thread.sleep(2000);
+	    System.out.println("Current URL is : "+driver.getCurrentUrl());
 	}
 
 
