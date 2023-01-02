@@ -21,7 +21,7 @@ public class FacebookLoginStep {
 	}
 	@When("user enter username and password")
 	public void user_enter_username_and_password() {
-	   driver.findElement(By.id("email")).sendKeys("neema");
+	   driver.findElement(By.id("email")).sendKeys("manisha");
 	   driver.findElement(By.id("pass")).sendKeys("patil123");
 	   
 	}
